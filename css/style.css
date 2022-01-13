@@ -516,13 +516,6 @@ header .right {
   font-weight: 500;
 }
 
-.service__content p {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  overflow-wrap: normal;
-}
-
 .service {
   margin: 15px 0;
   margin-left: 20px;
@@ -535,6 +528,10 @@ header .right {
   .service__icon {
     margin: 0 auto;
     margin-bottom: 1rem;
+  }
+  .service__content h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
   }
 }
 
