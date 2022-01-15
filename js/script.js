@@ -33,7 +33,7 @@ function tabsFilters() {
     }
 
     const showProjects = (elem) => {
-        console.log(elem);
+        // console.log(elem);
         projects.forEach(project => {
             let filter = project.getAttribute('data-category');
             if (elem === 'allProject') {
@@ -42,14 +42,14 @@ function tabsFilters() {
             }
 
             // methode classique
-            // if(filter !== elem) {
-            //     project.parentNode.classList.add('hide');
-            // }else {
-            //     project.parentNode.classList.remove('hide');
-            // }
+            if(filter !== elem) {
+                project.parentNode.classList.add('hide');
+            }else {
+                project.parentNode.classList.remove('hide');
+            }
 
             // methode operation ternaire
-            filter !== elem ? project.parentNode.classList.add('hide') : project.parentNode.classList.remove('hide');
+            // filter !== elem ? project.parentNode.classList.add('hide') : project.parentNode.classList.remove('hide');
         });
     }
 
