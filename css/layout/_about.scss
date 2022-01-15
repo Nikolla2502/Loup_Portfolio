@@ -3,18 +3,26 @@
 }
 
 
-
-
-.about .grid__item img {
-
-    width: 80%;
-}
-
-
 @media screen and (min-width: 750px) {
     .about img {
         padding-right: 3rem;
         
+    }
+    
+}
+@media screen and (max-width: 749px) {
+    .about .grid__item:first-child {
+        width:20%;
+    }
+    .about {
+        .grid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 100%;
+        }
     }
 
 }
