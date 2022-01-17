@@ -54,6 +54,11 @@
      .hero__item.right {
          order: 1;
      }
+     .hero__avatar img {
+        // max-height: 60%;
+        background: white;
+
+    }
  }
  @media screen and (min-width: 750px) {
      .hero__avatar img {
