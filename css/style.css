@@ -661,7 +661,6 @@ header .right {
 
 .card {
   background: #FFF;
-  text-transform: uppercase;
   text-align: center;
   position: relative;
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
