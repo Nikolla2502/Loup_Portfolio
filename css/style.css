@@ -358,6 +358,32 @@ header .right {
           align-items: center;
 }
 
+.header_nav_lang_choice {
+  background-color: white;
+}
+
+.header_nav_lang_choice img {
+  height: 2.5rem;
+}
+
+@media screen and (max-width: 749px) {
+  .header_nav_lang_choice {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header .logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .right {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
 .hero {
   background: #5b6c78;
   color: #FFF;

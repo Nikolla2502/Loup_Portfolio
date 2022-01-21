@@ -30,3 +30,22 @@ header .right {
     display: flex;
     align-items: center;
 }
+.header_nav_lang_choice {
+    background-color: white;
+
+    img {
+
+        height: 2.5rem;
+    }
+}
+@media screen and (max-width: 749px) {
+    .header_nav_lang_choice {
+        order:1;
+    }
+    header .logo {
+        order:2;
+    }
+    .right {
+        order:3;
+    }
+}
