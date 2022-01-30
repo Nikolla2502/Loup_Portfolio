@@ -34,9 +34,13 @@ header .right {
     background-color: white;
 
     img {
-
         height: 2.5rem;
+        transition: .4s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
+
 }
 @media screen and (max-width: 749px) {
     .header_nav_lang_choice {
