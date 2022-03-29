@@ -524,7 +524,7 @@ header .right {
 
 @media screen and (min-width: 750px) {
   .about img {
-    padding-right: 3rem;
+    padding-left: 5vw;
   }
 }
 
