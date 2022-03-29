@@ -663,9 +663,8 @@ header .right {
   background-color: #F5F5F5;
 }
 
-.portfolio .grid__item {
-  min-width: 50%;
-  margin-bottom: 0;
+.grid__item__portfolio .card img {
+  height: 80%;
 }
 
 .portfolio-filters .grid__item {
@@ -691,6 +690,11 @@ header .right {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1rem;
+}
+
+.portfolio-filters a:hover {
+  background-color: #9fb8c9;
+  color: #FFF;
 }
 
 .portfolio-filters a.active {
