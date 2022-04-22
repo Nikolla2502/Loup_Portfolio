@@ -1,7 +1,3 @@
-// commentaire sur une ligne
-/* commentaire
-sur plusieurs lignes */
-
 
 // Affichage nav mobile
 function menuMobile() {
@@ -66,3 +62,16 @@ function tabsFilters() {
 }
 
 tabsFilters()
+
+
+// Modale carroussel
+const modalContainer = document.querySelector(".modal-container");
+const modalTriggers = document.querySelectorAll(".modal-trigger");
+
+modalTriggers.forEach((trigger) =>
+  trigger.addEventListener("click", toggleModal)
+);
+
+function toggleModal() {
+  modalContainer.classList.toggle("active");
+}
