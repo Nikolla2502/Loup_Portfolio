@@ -5,13 +5,26 @@ header {
     top: 0;
     z-index: 1;
 }
-
-header .logo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    
+header .container {
+    padding: 1rem;
 }
+header {
+    .logo {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        display: flex;
+
+        img {
+            height: 8vh;
+        }
+        h1 {
+            margin: auto;
+            margin-left: 1vw;
+        }
+    }
+}
+    
 
 
 
@@ -42,6 +55,7 @@ header .right {
     }
 
 }
+
 @media screen and (max-width: 749px) {
     .header_nav_lang_choice {
         order:1;
@@ -52,4 +66,14 @@ header .right {
     .right {
         order:3;
     }
+}
+@media screen and (max-width: 540px) {
+
+    header .logo {
+        order:2;
+        h1 {
+            font-size: 1em;
+        }
+    }
+
 }

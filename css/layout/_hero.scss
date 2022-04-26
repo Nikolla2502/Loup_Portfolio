@@ -7,10 +7,11 @@
  }
  .hero .container {
      padding: 0;
+
  }
  .hero__avatar{
 
-     text-align: right;
+     text-align: center;
  }
  .hero__avatar img {
      background: white;
@@ -28,12 +29,13 @@
  
  .hero .title {
      font-size: 4rem;
-     padding: 1.5rem 0 ;
      color:inherit;  /* la couleur est fixe par son parent*/
  }
  
  .hero__item.left {
      animation: slideInLeft 1s;
+     padding-left:2.5vw;
+
      
  }
   .hero__item.right {
@@ -47,6 +49,7 @@
  @media screen and (max-width: 749px) {
      .hero__item.left {
          order: 2;
+         padding:0;
      }
      .hero__item.right {
          order: 1;
@@ -61,6 +64,7 @@
      .hero__avatar img {
          max-width: 60%;
          background: white;
+         text-align: right;
 
      }
      .hero .title {

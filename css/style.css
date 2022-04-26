@@ -329,10 +329,26 @@ header {
   z-index: 1;
 }
 
+header .container {
+  padding: 1rem;
+}
+
 header .logo {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo img {
+  height: 8vh;
+}
+
+header .logo h1 {
+  margin: auto;
+  margin-left: 1vw;
 }
 
 header li {
@@ -391,6 +407,17 @@ header .right {
   }
 }
 
+@media screen and (max-width: 540px) {
+  header .logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header .logo h1 {
+    font-size: 1em;
+  }
+}
+
 .hero {
   background: #5b6c78;
   color: #FFF;
@@ -402,7 +429,7 @@ header .right {
 }
 
 .hero__avatar {
-  text-align: right;
+  text-align: center;
 }
 
 .hero__avatar img {
@@ -430,7 +457,6 @@ header .right {
 
 .hero .title {
   font-size: 4rem;
-  padding: 1.5rem 0;
   color: inherit;
   /* la couleur est fixe par son parent*/
 }
@@ -438,6 +464,7 @@ header .right {
 .hero__item.left {
   -webkit-animation: slideInLeft 1s;
           animation: slideInLeft 1s;
+  padding-left: 2.5vw;
 }
 
 .hero__item.right {
@@ -449,6 +476,7 @@ header .right {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    padding: 0;
   }
   .hero__item.right {
     -webkit-box-ordinal-group: 2;
@@ -464,6 +492,7 @@ header .right {
   .hero__avatar img {
     max-width: 60%;
     background: white;
+    text-align: right;
   }
   .hero .title {
     padding: 1.5rem 0;
