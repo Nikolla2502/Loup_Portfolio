@@ -7,6 +7,7 @@ function menuMobile() {
 
     btn.addEventListener('click', () => {
         header.classList.toggle('show-nav');
+        
     });
     links.forEach(link => {
         link.addEventListener("click",() => {
